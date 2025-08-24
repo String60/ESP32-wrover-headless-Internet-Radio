@@ -1,33 +1,31 @@
 # ESP32 Internet Radio
 
-An **ESP32-based internet radio** with touchscreen and web control, RGB LED status indicators, and support for multiple genres and streams. Control via hardware touch buttons or a web interface with dynamic buttons and status updates.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A **feature-rich ESP32 Internet Radio** with hardware touch buttons, web control interface, RGB LED status indicators, and dynamic genre support. Stream your favorite stations directly from your ESP32 using I2S audio output.
+
+---
 
 ## Features
 
-- **Touch controls**: Previous, Next, Play/Pause
-- **Long press** for Volume mode and Genre selection
-- **RGB LED** indicates:
-  - Playing / Paused
-  - Volume mode
-  - Genre mode
-  - WiFi status
-- **Web interface**:
-  - Round, colorful buttons for all controls
-  - Real-time status display (channel, genre, volume, playing)
-  - AJAX updates every second
-- **Multiple genres supported**:
+- **Touch Controls**
+  - Prev / Next / Play-Pause
+  - Long press for Volume or Genre mode
+- **RGB LED Indicators**
+  - Playing / Paused / WiFi / Volume / Genre / Channel changes
+- **Web Interface**
+  - Round, colorful buttons for control
+  - AJAX updates every second for live status
+- **Dynamic Genres & Streams**
   - British, Australian, Groups, Decades, Comedy, Other
-- **Dynamic JSON-based stream loading** from GitHub
+  - JSON-based stream configuration loaded from GitHub
+- **Stable Streaming**
+  - Configurable audio buffer size
+  - WiFi sleep disabled for uninterrupted playback
+
+---
 
 ## Hardware Required
-
-- ESP32 module (any variant with I2S support)
-- I2S audio output (DAC or amplifier)
-- Capacitive touch buttons (GPIO 32, 33, 34)
-- RGB LED (common anode recommended)
-- Optional legacy LEDs for status
-
-## Pin Configuration
 
 | Function           | GPIO  |
 |-------------------|-------|
@@ -43,59 +41,15 @@ An **ESP32-based internet radio** with touchscreen and web control, RGB LED stat
 | Status LED         | 4     |
 | Volume Mode LED    | 2     |
 
-## Installation
+**Optional:** Amplifier, DAC, legacy status LEDs.
 
-1. Clone this repository to your Arduino projects folder:
-
-# ESP32 Internet Radio
-
-An **ESP32-based internet radio** with touchscreen and web control, RGB LED status indicators, and support for multiple genres and streams. Control via hardware touch buttons or a web interface with dynamic buttons and status updates.
-
-## Features
-
-- **Touch controls**: Previous, Next, Play/Pause
-- **Long press** for Volume mode and Genre selection
-- **RGB LED** indicates:
-  - Playing / Paused
-  - Volume mode
-  - Genre mode
-  - WiFi status
-- **Web interface**:
-  - Round, colorful buttons for all controls
-  - Real-time status display (channel, genre, volume, playing)
-  - AJAX updates every second
-- **Multiple genres supported**:
-  - British, Australian, Groups, Decades, Comedy, Other
-- **Dynamic JSON-based stream loading** from GitHub
-
-## Hardware Required
-
-- ESP32 module (any variant with I2S support)
-- I2S audio output (DAC or amplifier)
-- Capacitive touch buttons (GPIO 32, 33, 34)
-- RGB LED (common anode recommended)
-- Optional legacy LEDs for status
-
-## Pin Configuration
-
-| Function           | GPIO  |
-|-------------------|-------|
-| I2S DOUT           | 25    |
-| I2S BCLK           | 27    |
-| I2S LRC            | 26    |
-| Touch Next         | 32    |
-| Touch Previous     | 33    |
-| Touch Play/Pause   | 34    |
-| RGB Red            | 12    |
-| RGB Green          | 13    |
-| RGB Blue           | 14    |
-| Status LED         | 4     |
-| Volume Mode LED    | 2     |
+---
 
 ## Installation
 
-1. Clone this repository to your Arduino projects folder:
+1. Clone this repository:
 
 ```bash
 git clone https://github.com/YourUsername/ESP32-Internet-Radio.git
+ithub.com/YourUsername/ESP32-Internet-Radio.git
 
